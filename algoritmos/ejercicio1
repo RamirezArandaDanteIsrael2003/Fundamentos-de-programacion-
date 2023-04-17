@@ -1,0 +1,26 @@
+/*
+INSTRUCCIONES
+Diseña un algoritmo y un programa que pida al usuario introduzca un número de a lo
+más 3 dígitos (contempla números positivos y números negativos) y muéstrale en pantalla de cuantos
+dígitos es su número y si es positivo o negativo. Si el número tiene más de 3 dígitos SOLO muestra
+un mensaje que indique que el número no es válido.
+
+Entrada numero
+Escribe("Ingresa el numero")
+Lee numero
+SI(numero<=-1000 || numero>=1000)ENTONCES
+    Escribe("El numero no es valido")
+    exit(0)
+    SINO SI((numero<=999 && numero>=100) || (numero>=-999 && numero<=-100))ENTONCES
+        Escribe("El numero tiene 3 digitos")
+    SINO SI((numero<=99 && numero>=10) || (numero>=-99 && numero<=-10))ENTONCES
+        Escribe("El numero tiene 2 digitos")
+    SINO SI((numero<=9 && numero>=0) || (numero>=-9 && numero<=0))ENTONCES
+        Escribe("El numero tiene 1 digito")
+FIN SI
+SI(numero<0)ENTONCES
+    Escribe("El numero %d es negativo",numero)
+SINO
+    Escribe("El numero %d es positivo",numero)
+FIN SI
+*/

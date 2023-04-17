@@ -1,0 +1,38 @@
+/*
+
+#define sueldo_fijo 250
+#define sueldo_horas_extra 375
+#define impuestos_5 .05
+#define impuestos_10 .1
+
+Entrada horas
+Auxiliares horas_extra,sueldo_fijo,sueldo_horas_extra
+Auxiliares impuestos_5=.05,impuestos_10=.1,sueldo_bruto
+Salida sueldo_neto
+    Escribir("Ingresa la cantidad de horas trabajadas")
+    lee horas
+    SI(horas<0)ENTONCES
+        Escribir("Las horas no pueden ser negativas")
+        exit(0)
+    FINSI
+
+    SI(horas>=0 && horas<=40)ENTONCES
+        sueldo_bruto=horas*sueldo_fijo
+    SINO
+        horas_extra=horas-40
+        sueldo_bruto=(horas-horas_extra)*sueldo_fijo
+        sueldo_bruto=sueldo_bruto+(horas_extra*sueldo_horas_extra)
+    FINSI
+
+    SI(sueldo_bruto<8000)ENTONCES
+        Escribir("El sueldo neto es de:$",sueldo_bruto)
+    SINO SI(sueldo_bruto>=8000 && sueldo_bruto<=10000)ENTONCES
+        sueldo_neto=sueldo_bruto-(sueldo_bruto*impuestos_5)
+        Escribir("El sueldo neto es de:$",sueldo_neto)
+    SINO
+       sueldo_neto=sueldo_bruto-(sueldo_bruto*impuestos_10)
+       Escribir("El sueldo neto es de:$",sueldo_neto)
+    FINSI
+
+*/
+
